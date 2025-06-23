@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Loops - Creative Visual with JavaScript</title>
+</head>
+<body>
+    <canvas width="600" height="600"></canvas>
+    
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let ctx = canvas.getContext('2d');
+
+        ctx.lineWidth = 5;
+        for(let i = 0; i < 5; i++) {
+            for(let j = 0; j < 5; j++) {
+                ctx.beginPath();
+                ctx.rect(100 + i * 100, 100 + j * 100, 80, 80);
+                ctx.stroke();
+                
+                if(Math.random() > 0.5) {
+                    ctx.fillStyle = 'blue';
+                } else {
+                    ctx.fillStyle = 'green';
+                }
+                ctx.beginPath();
+                ctx.arc(140 + i * 100, 140 + j * 100, 30, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+    </script>
+</body>
+</html>
