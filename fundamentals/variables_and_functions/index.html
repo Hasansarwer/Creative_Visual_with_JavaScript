@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Variables and Functions - Creative Visual with JavaScript</title>
+</head>
+<body>
+    <canvas width="600" height="600"></canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(100, 100, 400, 400);
+
+
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.rect(150, 150, 300, 300);
+        ctx.stroke();
+        ctx.fillStyle = 'red';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(300, 300, 150, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = 'yellow';
+        ctx.fill();
+
+        let year = 2042;
+        let nextYear = year + 1;
+
+        let dinner = 'salad';
+    </script>
+
+</body>
+</html>
