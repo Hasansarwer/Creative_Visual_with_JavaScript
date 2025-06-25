@@ -4,3 +4,6 @@
 /dist
 
 /.cache
+
+/sketch_type/node_modules
+/sketch_type/package-lock.json
